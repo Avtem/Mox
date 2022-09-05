@@ -1,0 +1,69 @@
+﻿Program name: Mox
+Last version: 1.3.0
+Birth day: 07.02.2020
+Dedicated hours: ... hours
+
+
+===== version 1.0.0:
+"Dream became real"
+
+$release date: 18.02.2020
+$dedicated hours: ??
+
+===== version 1.1.0:
+"In real life it should be different"
+$release date: 21.02.2020
+$dedicated hours: ??
+
+#fixed:
+	- some small bugs
+#improved:
+	- cursor position now jumps at the end of text fields where you can edit text
+#added:
+	- start from 'n' exercise feature
+	- guard, that doesn't allow start exercising if string sequence has errors
+
+===== version 1.2.0:
+"Please stop!"
+$release date: 21.02.2020
+$dedicated hours: ??
+
+#fixed: 
+	- now stop exercising is much better
+	- crashes that occured on "Back" press and sometimes on app launch
+#improved:
+	- "Get ready" is 2 second long now
+	- sizes of text fields so it's more easy to edit exercise sequence
+	- volume of "tick" and "beep"
+#added:
+	- version of the program at the bottom of screen
+
+===== version 1.3.0:
+"Pity my ears!"
+$release date: 04.03.2020
+$dedicated hours: 1.5
+
+#fixed: 
+#improved:
+	- audio volumes
+	- saving data moved to "onStop()", which means that program should save users' settings always
+	- field "start from:" is not focused on launch
+	- now user can change volume of the app pretty much at every moment, because before changing volume was painful
+#added:
+
+===== version 1.4.0:
+"Do it faster"
+$release date: 31.03.2020
+$dedicated hours: 2
+
+#added:
+	- fast mode
+
+===== version 1.4.1:
+$release date: 03.04.2020
+$dedicated hours: 2
+
+#improved:
+	- removed very last unnecessary ticks
+	- added input filter in EditText with sequence
+	- estimate time now is more accurate

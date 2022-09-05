@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mainConstraintLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F8DB45"
+    android:focusableInTouchMode="true"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/edtxtStartFrom"
+        android:layout_width="50dp"
+        android:layout_height="33dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:background="#76C57A"
+        android:ems="10"
+        android:focusable="true"
+        android:gravity="center"
+        android:hint="1"
+        android:inputType="number"
+        android:text="1"
+        android:textColor="#000000"
+        android:textColorHighlight="#00F5F2F2"
+        android:textColorHint="#C5BDBD"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/btnStart"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/btnStart" />
+
+    <EditText
+        android:id="@+id/edtxtMovemCount"
+        android:layout_width="50dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:background="#C78F55"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="10"
+        android:inputType="number"
+        android:singleLine="false"
+        android:text="10"
+        android:textColor="#FeFeFe"
+        android:textColorHighlight="#00F5F2F2"
+        android:textColorHint="#C5BDBD"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtxtBreakMov" />
+
+    <EditText
+        android:id="@+id/edtxtedtxtMovemDur"
+        android:layout_width="50dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:background="#C78F55"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="3"
+        android:inputType="none|number"
+        android:text="3"
+        android:textColor="#FeFeFe"
+        android:textColorHighlight="#00F5F2F2"
+        android:textColorHint="#C5BDBD"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtxtMovemCount" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:text="Pause between repetitions"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toBottomOf="@+id/edtxtBreakMov"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/edtxtBreakMov" />
+
+    <Button
+        android:id="@+id/btnStart"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="16dp"
+        android:background="#388E3C"
+        android:focusable="auto"
+        android:onClick="doThreading"
+        android:text="Start exercising"
+        android:textAllCaps="false"
+        android:textColor="?attr/colorBackgroundFloating"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/edtxtStartFrom" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:text="Pause before exercise"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toBottomOf="@+id/edtxtBreakEx"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/edtxtBreakEx" />
+
+    <EditText
+        android:id="@+id/edtxtBreakEx"
+        android:layout_width="50dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:background="#C78F55"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="8"
+        android:inputType="none|numberDecimal"
+        android:text="8"
+        android:textColor="#FeFeFe"
+        android:textColorHighlight="#00F5F2F2"
+        android:textColorHint="#C5BDBD"
+        android:textSize="18sp"
+        android:verticalScrollbarPosition="left"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/edtxtBreakMov"
+        android:layout_width="50dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:background="#C78F55"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="2"
+        android:inputType="none|numberDecimal"
+        android:text="2"
+        android:textColor="#FeFeFe"
+        android:textColorHighlight="#00F5F2F2"
+        android:textColorHint="#C5BDBD"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtxtBreakEx" />
+
+    <TextView
+        android:id="@+id/txtDebug"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="---"
+        android:textColor="#5E4E4E"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/switchFastMode"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtxtSequence" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:text="Repetition count"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toBottomOf="@+id/edtxtMovemCount"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/edtxtMovemCount" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:text="Repetition duration in seconds"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toBottomOf="@+id/edtxtedtxtMovemDur"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/edtxtedtxtMovemDur" />
+
+    <EditText
+        android:id="@+id/edtxtSequence"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginRight="32dp"
+        android:background="#A85610"
+        android:digits="9876543210 [].#"
+        android:ems="10"
+        android:gravity="start|top"
+        android:hint="#1    [8.0] [2.0] [10] [3]"
+        android:inputType="none"
+        android:lines="3"
+        android:padding="5dp"
+        android:singleLine="false"
+        android:text="#1    [8] [2] [10] [3]"
+        android:textColor="#FDFDFD"
+        android:textColorHint="#C5BDBD"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnAdd" />
+
+    <ImageButton
+        android:id="@+id/btnAdd"
+        android:layout_width="36dp"
+        android:layout_height="40dp"
+        android:onClick="addExercise"
+        app:layout_constraintBottom_toTopOf="@+id/edtxtSequence"
+        app:layout_constraintEnd_toEndOf="@+id/edtxtedtxtMovemDur"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/edtxtedtxtMovemDur"
+        app:layout_constraintTop_toBottomOf="@+id/edtxtedtxtMovemDur"
+        app:srcCompat="@android:drawable/ic_input_add" />
+
+    <TextView
+        android:id="@+id/txtDuration"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
+        android:text="Total duration: 25m 06s"
+        android:textStyle="italic"
+        app:layout_constraintBottom_toBottomOf="@+id/btnAdd"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/btnAdd" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
+        android:lines="1"
+        android:text="start from"
+        android:textColor="#363030"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toTopOf="@+id/edtxtStartFrom"
+        app:layout_constraintEnd_toEndOf="@+id/edtxtStartFrom"
+        app:layout_constraintStart_toStartOf="@+id/edtxtStartFrom" />
+
+    <TextView
+        android:id="@+id/txtProgramVersion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
+        android:text="v 1.4.1"
+        android:textColor="#5E5858"
+        android:textSize="10sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/edtxtStartFrom"
+        app:layout_constraintStart_toStartOf="@+id/edtxtStartFrom" />
+
+    <androidx.appcompat.widget.SwitchCompat
+        android:id="@+id/switchFastMode"
+        android:layout_width="124dp"
+        android:layout_height="21dp"
+        android:checked="true"
+        android:onClick="refreshTimeEstimate"
+        android:shadowColor="#00D81B60"
+        android:text="Fast mode"
+        app:layout_constraintBottom_toTopOf="@+id/btnStart"
+        app:layout_constraintEnd_toEndOf="@+id/btnStart" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

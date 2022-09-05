@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Mox</string>
+    
+<!--    settings stuff-->
+    <string name="settingsKeyPauseBeforeExercise">com.avtem.PAUSE_BEFORE_EXERCISE</string>
+    <string name="settingsKeyPauseBeforeMovements">com.avtem.PAUSE_BEFORE_MOVEMENTS</string>
+    <string name="settingsKeyMovementCount">com.avtem.MOVEMENT_COUNT</string>
+    <string name="settingsKeyMovementDur">com.avtem.MOVEMENT_DURATION</string>
+    <string name="settingsKeySequence">com.avtem.SEQUENCE</string>
+</resources>

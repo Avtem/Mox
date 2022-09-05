@@ -1,0 +1,9 @@
+﻿Program name: PROGRAM_NAME
+
+===== to fix:
+	- /// DONE version, changelog in "about" section
+	- why counted time less then real spent time?
+===== to improve:
+	- make 'release' version
+	- replace "get ready" and "finish" sounds for something other
+===== to add:
