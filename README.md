@@ -1,4 +1,4 @@
-Source code for the Android app "Mox"
+Source code for the Android app "Mох"
 
 READ ME!!!<br>
 This is my private project. I was the only person working on it, so it will not build on other machines.
