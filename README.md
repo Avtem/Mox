@@ -1,5 +1,3 @@
-Source code for the Android app "Mох"
+Android application for guiding physical exercises using audio.
 
-READ ME!!!<br>
-This is my private project. I was the only person working on it, so it will not build on other machines.
-<br>But you can still inspect most of my code to make sure I am the one who wrote it.
+User can define any exercise they want and the program will play audio cues automatically based on provided information about the exercise.
